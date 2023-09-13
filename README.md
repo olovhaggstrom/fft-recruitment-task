@@ -9,10 +9,10 @@ We have created infrastructure and app for a basic web site using Amazon Web Ser
 - Deploy the infrastructure in infrastructure-task folder using Terraform (terraform init && terraform apply)
 - Copy the static app in the app folder to the created S3-bucket
 - Familiarize yourself with the "application"
-- Notice that the "home" page has two other variants home/variant-1 and home/variant-2 which are currently unused
-- Implement _infrastructure-level_ logic that will randomly distribute traffic to the "home" page between the different variants (home, home/variant-1, and home/variant-2)
+- Notice that the "home" page has two other variants `home/variant-1` and `home/variant-2` which are currently unused
+- Implement _infrastructure-level_ logic that will randomly distribute traffic to the "home" page between the different variants (`home`, `home/variant-1`, and `home/variant-2`)
 - Depending on how much time you have, there are some possible extensions:
-  - Prevent users from accessing the other variants by going directly to the corresponding URL. /home should lead to the assigned variant, /home/variant-1 and /home/variant-2 should not work.
+  - Prevent users from accessing the other variants by going directly to the corresponding URL. `/home` should lead to the assigned variant, `/home/variant-1` and `/home/variant-2` should not work.
   - Add a way for developers (etc.) to access a specific variant (maybe a cookie or other header, or a URL parameter)
   - Make the distribution "sticky" so that a particular user always gets the same variant
   - Add a way to quickly turn the "experiment" on or off without deploying new code. When off, visitors should always get the original version
