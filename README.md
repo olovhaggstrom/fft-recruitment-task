@@ -25,7 +25,7 @@ At Telia we manage our infrastructure as code using Terraform, but for this task
 ## Tips
 
 - There is already a Lambda@Edge function that handles incoming requests. This could be a good place to start, but you may choose a different solution if you want
-- AWS has good developer documentation. The most relevant parts is likely the [CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html).
-- The existing infrastructure is set up using Terraform. You can see the templates in this repository, and if you want to you can continue using Terraform to modify it.
+- AWS has good developer documentation. The most relevant parts is likely the [CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)
+- The existing infrastructure is set up using Terraform. You can see the templates in this repository, and if you want to you can continue using Terraform to modify it
 
 **Good luck!**
